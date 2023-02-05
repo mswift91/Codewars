@@ -1,0 +1,10 @@
+def solution(number):
+    num = 0
+    for i in range(number):
+        if i % 3 == 0:
+            num+= i
+        elif i% 5 == 0:
+            num+=i
+        else:
+            pass
+    return num
