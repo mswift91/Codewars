@@ -1,0 +1,11 @@
+def move_zeros(lst):
+    res = []
+    num = 0
+    for i in lst:
+        if i!=0:
+          res.append(i)
+        if i == 0:
+            num+=1
+    for i in range(num):
+        res.append(0)
+    return res
