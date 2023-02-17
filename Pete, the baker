@@ -1,0 +1,8 @@
+def cakes(recipe, available):
+    res = []
+    for i,j in recipe.items():
+        if i not in available.keys():
+            return 0
+        else:
+            res.append(available[i]/j)
+    return (int(sorted(res)[0]))
